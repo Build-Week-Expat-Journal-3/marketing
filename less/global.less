@@ -1,6 +1,23 @@
 //global general styles go here
 
-* {
+
+
+html, body {
+    background-color: @sand;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+h1, h2, h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.container {
+    .flexin(column, wrap, center, flex-start);
+    max-width: 800px;
     box-sizing: border-box;
-    border: 1px solid grey; //remove when done
+    border: 1px solid grey;
+    margin-top: 2%;
+    margin-left: 15%;
 }

@@ -15,21 +15,29 @@ h1, h2, h3 {
    max-width: 60%;
    margin: 5% 20%;
 
-   .navigation {
-       .remove();
-       .flexin(row, wrap, flex-end, center);
-       margin-top: 2%;
-       font-size: 1.6rem;
-   }//end navigation
+   header {
+       .flexin(column, nowrap, flex-start, center);
+       background-color: green;
 
-   .cta {
-       .remove();
-       .flexin(row, wrap, center, center);
-       color: white;
-       background-color: darkmagenta;
-       height: 30vh;
-   }//end cta
+    .navigation {
+        align-self: flex-end;
+        width: 100%;
+        .flexin(row, wrap, flex-end, space-around);
+        background-color: red;
+        margin-top: 2%;
+        font-size: 1.6rem;
 
+    }//end navigation
+
+    .cta {
+        .remove();
+        .flexin(row, wrap, center, center);
+        color: white;
+        background-color: darkmagenta;
+        width: 60%;
+        height: 30vh;
+    }//end cta
+   }//end header
    .getStarted {
        .remove();
        background-color: orange;

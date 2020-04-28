@@ -1,2 +1,23 @@
 //navigation styles go here
 
+.navigation nav {
+    .flexin(row, wrap, flex-end, space-around);
+    letter-spacing: .3rem;
+
+    a {
+        text-decoration: none;
+        color: @darkclay;
+
+        &:hover{
+            color: @pinkclay;
+        }//end hover
+
+        &:active, &:hover {
+            text-transform: uppercase;
+            color:@darksand;
+        }
+    }//end a
+
+
+
+}//end navigation

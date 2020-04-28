@@ -148,17 +148,27 @@ h3 {
   max-width: 60%;
   margin: 5% 20%;
 }
-.container .navigation {
-  border: 2px solid grey;
+.container header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: green;
+}
+.container header .navigation {
+  align-self: flex-end;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: center;
+  align-items: space-around;
+  background-color: red;
   margin-top: 2%;
   font-size: 1.6rem;
 }
-.container .cta {
+.container header .cta {
   border: 2px solid grey;
   display: flex;
   flex-direction: row;
@@ -167,6 +177,7 @@ h3 {
   align-items: center;
   color: white;
   background-color: darkmagenta;
+  width: 60%;
   height: 30vh;
 }
 .container .getStarted {
@@ -184,4 +195,24 @@ h3 {
 .container .footerInfo {
   border: 2px solid grey;
   background-color: darkseagreen;
+}
+.navigation nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: space-around;
+  letter-spacing: 0.3rem;
+}
+.navigation nav a {
+  text-decoration: none;
+  color: #b7472a;
+}
+.navigation nav a:hover {
+  color: #eb9788;
+}
+.navigation nav a:active,
+.navigation nav a:hover {
+  text-transform: uppercase;
+  color: #ffd5ab;
 }

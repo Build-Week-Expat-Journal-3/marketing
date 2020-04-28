@@ -1,7 +1,4 @@
 //global general styles go here
-
-
-
 html, body {
     background-color: @sand;
     font-family: 'Montserrat', sans-serif;
@@ -14,10 +11,44 @@ h1, h2, h3 {
 }
 
 .container {
-    .flexin(column, wrap, center, flex-start);
-    max-width: 800px;
-    box-sizing: border-box;
-    border: 1px solid grey;
-    margin-top: 2%;
-    margin-left: 15%;
-}
+   .flexin(column, wrap, flex-start, stretch);
+   max-width: 60%;
+   margin: 5% 20%;
+
+   .navigation {
+       .remove();
+       .flexin(row, wrap, flex-end, center);
+       margin-top: 2%;
+       font-size: 1.6rem;
+   }//end navigation
+
+   .cta {
+       .remove();
+       .flexin(row, wrap, center, center);
+       color: white;
+       background-color: darkmagenta;
+       height: 30vh;
+   }//end cta
+
+   .getStarted {
+       .remove();
+       background-color: orange;
+   }
+
+   .whoWhy {
+       .remove();
+       background-color: blue;
+   }
+
+   .journals {
+       .remove();
+       background-color: pink;
+   }
+
+   .footerInfo {
+       .remove();
+       background-color: darkseagreen;
+   }
+   
+   
+}//end container

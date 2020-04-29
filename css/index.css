@@ -230,6 +230,7 @@ h3 {
 @media (max-width: 500px) {
   .container header .cta h1 {
     text-align: center;
+    line-height: 3rem;
     font-size: 3rem;
     margin: 5% 0;
   }

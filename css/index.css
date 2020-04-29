@@ -176,8 +176,9 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #eb9788 49%, #ffd5ab 91%);
+  background: linear-gradient(90deg, #eb9788 55%, #ffd5ab 91%);
   color: white;
+  text-shadow: 1px 1px 0 #b7472a;
   opacity: 0.8;
   width: 40%;
   height: 30vh;
@@ -192,6 +193,7 @@ h3 {
   padding: 5%;
   font-size: 1.8rem;
   font-weight: 500;
+  text-shadow: 1px 1px 0 #b7472a;
   border: 2px solid white;
   border-radius: 1rem;
 }
@@ -275,14 +277,31 @@ h3 {
   font-size: 1.6rem;
 }
 .container .whoWhy {
-  border: 2px solid grey;
-  background: linear-gradient(90deg, #eb9788 49%, #ffd5ab 91%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  background: linear-gradient(90deg, #eb9788 55%, #ffd5ab 91%);
   height: 30vh;
 }
 .container .whoWhy h2 {
   text-align: center;
   font-weight: 700;
   margin: 2% 0;
+}
+.container .whoWhy .whoWhy-text {
+  width: 62%;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-shadow: 1px 1px 0 #b7472a;
+}
+.container .whoWhy .image {
+  width: 35%;
+  background: url(https://picsum.photos/500);
+  object-fit: contain;
+  background-repeat: no-repeat;
 }
 .container .journals {
   border: 2px solid grey;

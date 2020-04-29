@@ -32,14 +32,28 @@
 }//end getStarted
 
 .container .whoWhy {
-    .remove();
+    .flexin(row, wrap, space-between, stretch);
     .gradientBg();
     height: 30vh;
     h2 {
        .h2-format();
     }
+        .whoWhy-text {
+            width: 62%;
+            color: white;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            text-shadow: 1px 1px 0 @darkclay;
 
-}//end whoWhy
+        }
+        .image {
+            width: 35%;
+            background:url(https://picsum.photos/500);
+            object-fit: contain;
+            background-repeat: no-repeat;
+    }//end image
+}//end whoWHy
+
 
 .container .journals {
     .remove();

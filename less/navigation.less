@@ -1,14 +1,22 @@
 //navigation styles go here
 
 .navigation nav {
-    .flexin(row, wrap, flex-end);
+    .flexin(row, wrap, flex-end, center);
     width: 100%;
     letter-spacing: .3rem;
     background-color: @sand;
 
+    @media @phone {
+        .flexin(column, wrap, center, center);
+    }
+
     ul {
-        .flexin(row, nowrap, flex-end, space-around);
+        .flexin(row, wrap, flex-end, space-around);
         .ul-format();
+
+        @media @phone {
+            .flexin(column, wrap, center, center);
+        }
     }
 
     li a {
@@ -17,6 +25,11 @@
         color: @darkclay;
         padding: .6rem 2rem;
         display:block;
+
+        @media @phone {
+            .flexin(column, wrap, center, center);
+            padding: .6rem 0rem;
+        }
 
         &:hover{
             color: @pinkclay;

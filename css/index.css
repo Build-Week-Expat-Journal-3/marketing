@@ -150,16 +150,27 @@ h3 {
   margin: 5% 20%;
   background-color: #fff2e5;
 }
+@media (max-width: 500px) {
+  .container {
+    justify-content: center;
+    border: 2px solid grey;
+  }
+}
 .container header {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   background-image: url(https://images.pexels.com/photos/2007401/pexels-photo-2007401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   object-fit: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
+}
+@media (max-width: 500px) {
+  .container header {
+    border: 2px solid grey;
+    justify-content: center;
+  }
 }
 .container header .navigation {
   align-self: flex-end;
@@ -170,6 +181,15 @@ h3 {
   justify-content: flex-end;
   align-items: center;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .container header .navigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .container header .cta {
   display: flex;
@@ -208,15 +228,34 @@ h3 {
   letter-spacing: 0.3rem;
   background-color: #fff2e5;
 }
+@media (max-width: 500px) {
+  .navigation nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .navigation nav ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: space-around;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .navigation nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .navigation nav li a {
   align-self: stretch;
@@ -224,6 +263,16 @@ h3 {
   color: #b7472a;
   padding: 0.6rem 2rem;
   display: block;
+}
+@media (max-width: 500px) {
+  .navigation nav li a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 0rem;
+  }
 }
 .navigation nav li a:hover {
   color: #eb9788;
@@ -251,6 +300,7 @@ h3 {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  text-align: center;
   width: 100%;
 }
 .container footer li {

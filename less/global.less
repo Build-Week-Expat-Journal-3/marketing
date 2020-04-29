@@ -16,21 +16,39 @@ h1, h2, h3 {
    max-width: 60%;
    margin: 5% 20%;
    background-color: @sand;
+
+   @media @phone {
+       //not sure what to add yet
+       justify-content: center;
+       .remove();
+
+   }
  
 
    header {
-       .flexin(column, nowrap, flex-start, center);
+       .flexin(column, wrap, flex-start, center);
        background-image: url(https://images.pexels.com/photos/2007401/pexels-photo-2007401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
        object-fit: cover;
        background-repeat: no-repeat;
-       background-size: 100%;
        
+       
+       @media @phone {
+        //header image background needs to shrink accordingly
+        .remove();
+        justify-content: center;
+ 
+    }//end phone breakpoint
 
     .navigation {
         align-self: flex-end;
         width: 100%;
         .flexin(row, wrap, flex-end);
         font-size: 1.6rem;
+
+        @media @phone {
+            .flexin (column, wrap, center, center);
+     
+        }
     }//end navigation
 
     .cta {

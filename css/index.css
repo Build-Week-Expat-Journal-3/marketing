@@ -155,7 +155,6 @@ h3 {
     justify-content: center;
     max-width: 100%;
     margin: 5% 10%;
-    border: 2px solid grey;
   }
 }
 .container header {
@@ -170,7 +169,6 @@ h3 {
 }
 @media (max-width: 500px) {
   .container header {
-    border: 2px solid grey;
     justify-content: center;
   }
 }
@@ -348,6 +346,16 @@ h3 {
 .container .getStarted {
   height: 20vh;
 }
+@media (max-width: 500px) {
+  .container .getStarted {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
 .container .getStarted h2 {
   color: #b7472a;
   text-align: center;
@@ -363,23 +371,39 @@ h3 {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
-.container .getStarted li span {
-  font-size: 3rem;
+@media (max-width: 500px) {
+  .container .getStarted ul {
+    flex-direction: column;
+    margin-bottom: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .container .getStarted ul li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container .getStarted ul li span {
+  font-size: 2rem;
   padding: 0.6rem 2rem;
   display: block;
 }
-.container .getStarted li .icon-box {
+.container .getStarted ul li .icon-box {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   color: #b7472a;
   font-size: 2rem;
   margin-top: 10%;
 }
-.container .getStarted li .icon-box .getStarted-text {
+.container .getStarted ul li .icon-box .getStarted-text {
   font-size: 1.6rem;
 }
 .container .whoWhy {

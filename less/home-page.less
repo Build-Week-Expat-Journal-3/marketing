@@ -1,7 +1,13 @@
 //home page styles go here
 
 .container .getStarted {
+    //.flexin(row, wrap, space-evenly, center);
     height: 20vh;
+
+    @media @phone {
+        .flexin(column, nowrap, center, center);
+        height: 100%;
+    }
     h2 {
         color:@darkclay;
         .h2-format();
@@ -11,24 +17,36 @@
         list-style-type: none;
         padding: 0;
         margin: 0;
-    }//end ul
+        width: 100%;
+
+        @media @phone {
+           flex-direction: column;
+           margin-bottom: 2%;
+        }
+
     li {
+
+        @media @phone{
+            .flexin(column, wrap, center, center);
+        }
         span {
-            font-size: 3rem;
+            font-size: 2rem;
             padding: .6rem 2rem;
             display:block;
-        }
+        }//end span
     .icon-box {
-        .flexin(column, wrap, center, center);
+        .flexin(column, wrap, space-evenly, center);
         color: @darkclay;
         font-size: 2rem;
         margin-top: 10%;
 
         .getStarted-text {
+            //.flexin(column, wrap, space-around, center);
             font-size: 1.6rem;
         }//end getStarted-text
     }//end icon-box
     }//end li
+    }//end ul
 }//end getStarted
 
 .container .whoWhy {

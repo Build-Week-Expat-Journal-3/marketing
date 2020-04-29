@@ -176,8 +176,8 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: white;
   background: linear-gradient(90deg, #eb9788 49%, #ffd5ab 91%);
+  color: white;
   opacity: 0.8;
   width: 40%;
   height: 30vh;
@@ -240,7 +240,7 @@ h3 {
 .container .getStarted h2 {
   color: #b7472a;
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
   margin: 2% 0;
 }
 .container .getStarted ul {
@@ -273,7 +273,7 @@ h3 {
 }
 .container .whoWhy {
   border: 2px solid grey;
-  background-color: blue;
+  background: linear-gradient(90deg, #eb9788 49%, #ffd5ab 91%);
 }
 .container .journals {
   border: 2px solid grey;

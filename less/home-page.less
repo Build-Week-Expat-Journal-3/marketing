@@ -37,6 +37,7 @@
     height: 30vh;
     h2 {
        .h2-format();
+       
     }
         .whoWhy-text {
             width: 62%;
@@ -56,24 +57,47 @@
 
 
 .container .journals {
-    .remove();
     .flexin(row, wrap, space-around, center);
-    
-    background-color:@darkclay;
+    margin: 2% 0;
+    background-color:@sand;
     h2 {
         .h2-format();
+        color: @darkclay;
         width: 100%;
+        font-size: 2.5rem;
+
     }//end h2
 
     h3 {
-        color: white;
+        color: @darkclay;
         font-size: 1.7rem; 
         width: 100%;
         text-align:center;
-        margin: 2%,0;
+        margin: 2% 0;
     }//end h3
     .journal-posts {
-        .remove();
-        //stuff goes here
+        
+        width: 30%;
+        
+        .journal-img img {
+            width: 100%;
+            object-fit: contain;
+
+        }//end images
+        .journals-info {
+            background-color: whitesmoke;
+            text-align: center;
+            line-height: 1.8rem;
+
+            h3 {
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 1.5rem;
+                text-align: left;
+            }
+
+        }
     }//end journal posts
 } //end journal

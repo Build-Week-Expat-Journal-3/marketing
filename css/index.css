@@ -131,6 +131,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
   line-height: 1.6rem;
+  background-color: #b7472a;
 }
 h1,
 h2,
@@ -232,13 +233,6 @@ h3 {
   text-transform: uppercase;
   color: #ffd5ab;
 }
-.container footer .footerInfo {
-  border: 2px solid grey;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  background-color: darkseagreen;
-}
 .container .getStarted {
   height: 20vh;
 }
@@ -304,27 +298,45 @@ h3 {
   background-repeat: no-repeat;
 }
 .container .journals {
-  border: 2px solid grey;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #b7472a;
+  margin: 2% 0;
+  background-color: #fff2e5;
 }
 .container .journals h2 {
   text-align: center;
   font-weight: 700;
   margin: 2% 0;
+  color: #b7472a;
   width: 100%;
+  font-size: 2.5rem;
 }
 .container .journals h3 {
-  color: white;
+  color: #b7472a;
   font-size: 1.7rem;
   width: 100%;
   text-align: center;
-  margin: 2%,0;
+  margin: 2% 0;
 }
 .container .journals .journal-posts {
-  border: 2px solid grey;
+  width: 30%;
+}
+.container .journals .journal-posts .journal-img img {
+  width: 100%;
+  object-fit: contain;
+}
+.container .journals .journal-posts .journals-info {
+  background-color: whitesmoke;
+  text-align: center;
+  line-height: 1.8rem;
+}
+.container .journals .journal-posts .journals-info h3 {
+  font-weight: 700;
+}
+.container .journals .journal-posts .journals-info p {
+  font-size: 1.5rem;
+  text-align: left;
 }

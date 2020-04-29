@@ -565,9 +565,8 @@ h3 {
   text-align: center;
   margin: 2% 0;
 }
-.container .main-content-area .image {
+.container .main-content-area .image img {
   width: 35%;
-  background: url(https://picsum.photos/400);
   object-fit: contain;
   background-repeat: no-repeat;
   border-radius: 25px;

@@ -230,8 +230,11 @@ h3 {
   text-transform: uppercase;
   color: #ffd5ab;
 }
-.container .footerInfo {
+.container footer .footerInfo {
   border: 2px solid grey;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   background-color: darkseagreen;
 }
 .container .getStarted {
@@ -274,6 +277,12 @@ h3 {
 .container .whoWhy {
   border: 2px solid grey;
   background: linear-gradient(90deg, #eb9788 49%, #ffd5ab 91%);
+  height: 30vh;
+}
+.container .whoWhy h2 {
+  text-align: center;
+  font-weight: 700;
+  margin: 2% 0;
 }
 .container .journals {
   border: 2px solid grey;

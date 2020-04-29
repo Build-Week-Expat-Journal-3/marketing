@@ -4,9 +4,7 @@
     height: 20vh;
     h2 {
         color:@darkclay;
-        text-align: center;
-        font-weight: 700;
-        margin: 2% 0;
+        .h2-format();
     }
     ul {
         .flexin(row, wrap, space-around, center);
@@ -36,6 +34,10 @@
 .container .whoWhy {
     .remove();
     .gradientBg();
+    height: 30vh;
+    h2 {
+       .h2-format();
+    }
 
 }//end whoWhy
 

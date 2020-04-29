@@ -369,16 +369,30 @@ h3 {
   font-size: 1.5rem;
   text-align: left;
 }
-.container {
+.container .main-content-area {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: stretch;
-  max-width: 60%;
-  margin: 5% 20%;
-  background-color: #fff2e5;
+  background: linear-gradient(90deg, #eb9788 55%, #ffd5ab 91%);
 }
-.container .header {
-  border: 2px solid grey;
+.container .main-content-area h2 {
+  text-align: center;
+  margin: 2% 0;
+}
+.container .main-content-area .image {
+  width: 35%;
+  background: url(https://picsum.photos/400);
+  object-fit: contain;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+.container .main-content-area .profile {
+  width: 62%;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  border-bottom: 1px outset #b7472a;
+  text-shadow: 1px 1px 0 #b7472a;
 }

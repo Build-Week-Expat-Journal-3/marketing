@@ -2,19 +2,14 @@
             <div class="image"><img src="" /></div>
             <div class = "why-info">
             <h2>Who is this for and why?</h2>
-            <p> Here we're limited by the time we have. Nature is so fantastic, enjoy it. Let it make you happy. You're meant to have fun in life. What the devil. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world.</p>
+            
         </div>
         </main>
         <section>
             <div class="gallery">
                 <h2> Other Journals</h2>
                 <h3>Get inspired by another's journal</h3>
-                <div class = "journals">image
-                    <div class ="journals-info">
-                        <h3>Title of Journal</h3>
-                        <p>Location of place</p>
-                        <p>Cras feugiat purus at eleifend laoreet.</p>
-                    </div>
+                
                     <div class ="journals-info">
                         <h3>Title of Journal</h3>
                         <p>Location of place</p>

@@ -235,10 +235,13 @@ h3 {
   background-color: darkseagreen;
 }
 .container .getStarted {
-  border: 2px solid grey;
+  height: 20vh;
 }
 .container .getStarted h2 {
   color: #b7472a;
+  text-align: center;
+  font-weight: 500;
+  margin: 2% 0;
 }
 .container .getStarted ul {
   display: flex;
@@ -246,6 +249,27 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.container .getStarted li span {
+  font-size: 3rem;
+  padding: 0.6rem 2rem;
+  display: block;
+}
+.container .getStarted li .icon-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #b7472a;
+  font-size: 2rem;
+  margin-top: 10%;
+}
+.container .getStarted li .icon-box .getStarted-text {
+  font-size: 1.6rem;
 }
 .container .whoWhy {
   border: 2px solid grey;

@@ -1,14 +1,36 @@
 //home page styles go here
 
 .container .getStarted {
-    .remove();
+    height: 20vh;
     h2 {
         color:@darkclay;
+        text-align: center;
+        font-weight: 500;
+        margin: 2% 0;
     }
     ul {
         .flexin(row, wrap, space-around, center);
-    }
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }//end ul
+    li {
+        span {
+            font-size: 3rem;
+            padding: .6rem 2rem;
+            display:block;
+        }
+    .icon-box {
+        .flexin(column, wrap, center, center);
+        color: @darkclay;
+        font-size: 2rem;
+        margin-top: 10%;
 
+        .getStarted-text {
+            font-size: 1.6rem;
+        }//end getStarted-text
+    }//end icon-box
+    }//end li
 }//end getStarted
 
 .container .whoWhy {

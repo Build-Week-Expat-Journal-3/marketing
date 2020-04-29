@@ -1,6 +1,5 @@
 //global general styles go here
 html, body {
-    background-color: @sand;
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -8,12 +7,15 @@ html, body {
 h1, h2, h3 {
     font-size: 2rem;
     font-weight: 500;
+    color: white;
 }
 
 .container {
    .flexin(column, wrap, flex-start, stretch);
    max-width: 60%;
    margin: 5% 20%;
+   background-color: @sand;
+ 
 
    header {
        .flexin(column, nowrap, flex-start, center);
@@ -54,26 +56,4 @@ h1, h2, h3 {
         }
     }//end cta
    }//end header
-
-   .getStarted {
-       .remove();
-       background-color: orange;
-   }//end getStarted
-
-   .whoWhy {
-       .remove();
-       background-color: blue;
-   }//end whoWhy
-
-   .journals {
-       .remove();
-       background-color: pink;
-   } //end journal
-
-   .footerInfo {
-       .remove();
-       background-color: darkseagreen;
-   }//end footer
-   
-   
 }//end container

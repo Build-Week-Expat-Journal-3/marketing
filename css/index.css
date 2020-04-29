@@ -128,7 +128,6 @@ table {
 }
 html,
 body {
-  background-color: #fff2e5;
   font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
   line-height: 1.6rem;
@@ -138,6 +137,7 @@ h2,
 h3 {
   font-size: 2rem;
   font-weight: 500;
+  color: white;
 }
 .container {
   display: flex;
@@ -147,6 +147,7 @@ h3 {
   align-items: stretch;
   max-width: 60%;
   margin: 5% 20%;
+  background-color: #fff2e5;
 }
 .container header {
   display: flex;
@@ -194,22 +195,6 @@ h3 {
   border: 2px solid white;
   border-radius: 1rem;
 }
-.container .getStarted {
-  border: 2px solid grey;
-  background-color: orange;
-}
-.container .whoWhy {
-  border: 2px solid grey;
-  background-color: blue;
-}
-.container .journals {
-  border: 2px solid grey;
-  background-color: pink;
-}
-.container .footerInfo {
-  border: 2px solid grey;
-  background-color: darkseagreen;
-}
 .navigation nav {
   display: flex;
   flex-direction: row;
@@ -244,4 +229,29 @@ h3 {
 .navigation nav li a:hover {
   text-transform: uppercase;
   color: #ffd5ab;
+}
+.container .footerInfo {
+  border: 2px solid grey;
+  background-color: darkseagreen;
+}
+.container .getStarted {
+  border: 2px solid grey;
+}
+.container .getStarted h2 {
+  color: #b7472a;
+}
+.container .getStarted ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .whoWhy {
+  border: 2px solid grey;
+  background-color: blue;
+}
+.container .journals {
+  border: 2px solid grey;
+  background-color: pink;
 }

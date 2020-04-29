@@ -149,12 +149,15 @@ h3 {
   margin: 5% 20%;
 }
 .container header {
-  border: 2px solid grey;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
+  background-image: url(https://images.pexels.com/photos/2007401/pexels-photo-2007401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .container header .navigation {
   align-self: flex-end;
@@ -164,20 +167,32 @@ h3 {
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 2%;
   font-size: 1.6rem;
 }
 .container header .cta {
-  border: 2px solid grey;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: darkmagenta;
-  width: 60%;
+  background: linear-gradient(90deg, #eb9788 49%, #ffd5ab 91%);
+  opacity: 0.8;
+  width: 40%;
   height: 30vh;
+}
+.container header .cta h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  align-self: center;
+  margin: 15% 0;
+}
+.container header .cta .button {
+  padding: 5%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border: 2px solid white;
+  border-radius: 1rem;
 }
 .container .getStarted {
   border: 2px solid grey;
@@ -203,7 +218,7 @@ h3 {
   align-items: center;
   width: 100%;
   letter-spacing: 0.3rem;
-  background-color: whitesmoke;
+  background-color: #fff2e5;
 }
 .navigation nav ul {
   display: flex;

@@ -5,24 +5,40 @@
     .gradientBg();
     width: 100%;
 
+    @media @phone {
+        flex-flow: column, wrap;
+    }
+
     ul {
         .flexin(row, nowrap, space-around, center);
         .ul-format();
         width:100%;
-    }//end ul
+
+        @media @phone {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: auto;
+        }
+    
 
     li {
         display: flex;
         justify-content: center;
         font-size: 1.2rem;
         width: 90%;
-
-        .icon {
-          margin-right: 1%;
-
+        @media @phone{
+            line-height: 2rem;
+            width: 100%;
+            text-align: center;
         }
+        .icon {
+          letter-spacing: 1rem;
+
+        }//end icon
 
         
-    }
+    }//end li
+
+    }//end ul
    
 }//end footer

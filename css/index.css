@@ -279,6 +279,11 @@ h3 {
   margin: 0;
   text-align: center;
 }
+@media (max-width: 770px) {
+  .navigation nav ul {
+    justify-content: center;
+  }
+}
 @media (max-width: 500px) {
   .navigation nav ul {
     display: flex;
@@ -322,6 +327,11 @@ h3 {
   background: linear-gradient(90deg, #eb9788 55%, #ffd5ab 91%);
   width: 100%;
 }
+@media (max-width: 500px) {
+  .container footer {
+    flex-flow: column, wrap;
+  }
+}
 .container footer ul {
   display: flex;
   flex-direction: row;
@@ -334,14 +344,28 @@ h3 {
   text-align: center;
   width: 100%;
 }
-.container footer li {
+@media (max-width: 500px) {
+  .container footer ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: auto;
+  }
+}
+.container footer ul li {
   display: flex;
   justify-content: center;
   font-size: 1.2rem;
   width: 90%;
 }
-.container footer li .icon {
-  margin-right: 1%;
+@media (max-width: 500px) {
+  .container footer ul li {
+    line-height: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+.container footer ul li .icon {
+  letter-spacing: 1rem;
 }
 .container .getStarted {
   height: 20vh;
@@ -486,7 +510,7 @@ h3 {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 35%;
+    margin-top: 3%;
   }
 }
 .container .journals h2 {

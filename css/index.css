@@ -153,6 +153,8 @@ h3 {
 @media (max-width: 500px) {
   .container {
     justify-content: center;
+    max-width: 100%;
+    margin: 5% 10%;
     border: 2px solid grey;
   }
 }
@@ -204,11 +206,28 @@ h3 {
   width: 40%;
   height: 30vh;
 }
+@media (max-width: 1220px) {
+  .container header .cta {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .container header .cta {
+    width: 90%;
+  }
+}
 .container header .cta h1 {
   font-size: 4rem;
   font-weight: 800;
   align-self: center;
   margin: 15% 0;
+}
+@media (max-width: 500px) {
+  .container header .cta h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5% 0;
+  }
 }
 .container header .cta .button {
   padding: 5%;
@@ -217,6 +236,14 @@ h3 {
   text-shadow: 1px 1px 0 #b7472a;
   border: 2px solid white;
   border-radius: 1rem;
+}
+@media (max-width: 500px) {
+  .container header .cta .button {
+    font-size: 1.2rem;
+    padding: 3%;
+    border: 1px solid white;
+    text-align: center;
+  }
 }
 .navigation nav {
   display: flex;

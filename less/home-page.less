@@ -53,8 +53,16 @@
     .flexin(row, wrap, space-between, stretch);
     .gradientBg();
     height: 30vh;
+
+    @media @phone{
+        .flexin(columns, wrap, center, center);
+        height: 90%;
+    }
     h2 {
        .h2-format();
+       @media @phone {
+           text-align: center;
+       }
        
     }
         .whoWhy-text {
@@ -64,12 +72,31 @@
             line-height: 2rem;
             text-shadow: 1px 1px 0 @darkclay;
 
+            @media @phone {
+                width: 90%;
+                margin: 2%;
+            }
+
+            @media @ipad {
+                width: 100%;
+                margin: 2%;
+            }
+
         }
         .image {
             width: 35%;
             background:url(https://picsum.photos/500);
             object-fit: contain;
             background-repeat: no-repeat;
+
+            @media @ipad {
+                width: 100%;
+            }
+
+            @media @phone {
+            display: hidden;
+
+            }
     }//end image
 }//end whoWHy
 
@@ -78,6 +105,11 @@
     .flexin(row, wrap, space-around, center);
     margin: 2% 0;
     background-color:@sand;
+
+    @media @phone {
+        .flexin(column, nowrap, space-evenly, center);
+        margin-top: 35%;
+    }
     h2 {
         .h2-format();
         color: @darkclay;
@@ -96,6 +128,11 @@
     .journal-posts {
         
         width: 30%;
+
+        @media @phone {
+            width: 90%;
+            margin-bottom: 3%;
+        }
         
         .journal-img img {
             width: 100%;

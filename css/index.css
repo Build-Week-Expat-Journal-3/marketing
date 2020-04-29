@@ -415,10 +415,25 @@ h3 {
   background: linear-gradient(90deg, #eb9788 55%, #ffd5ab 91%);
   height: 30vh;
 }
+@media (max-width: 500px) {
+  .container .whoWhy {
+    display: flex;
+    flex-direction: columns;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+  }
+}
 .container .whoWhy h2 {
   text-align: center;
   font-weight: 700;
   margin: 2% 0;
+}
+@media (max-width: 500px) {
+  .container .whoWhy h2 {
+    text-align: center;
+  }
 }
 .container .whoWhy .whoWhy-text {
   width: 62%;
@@ -427,11 +442,33 @@ h3 {
   line-height: 2rem;
   text-shadow: 1px 1px 0 #b7472a;
 }
+@media (max-width: 500px) {
+  .container .whoWhy .whoWhy-text {
+    width: 90%;
+    margin: 2%;
+  }
+}
+@media (max-width: 770px) {
+  .container .whoWhy .whoWhy-text {
+    width: 100%;
+    margin: 2%;
+  }
+}
 .container .whoWhy .image {
   width: 35%;
   background: url(https://picsum.photos/500);
   object-fit: contain;
   background-repeat: no-repeat;
+}
+@media (max-width: 770px) {
+  .container .whoWhy .image {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container .whoWhy .image {
+    display: hidden;
+  }
 }
 .container .journals {
   display: flex;
@@ -441,6 +478,16 @@ h3 {
   align-items: center;
   margin: 2% 0;
   background-color: #fff2e5;
+}
+@media (max-width: 500px) {
+  .container .journals {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 35%;
+  }
 }
 .container .journals h2 {
   text-align: center;
@@ -459,6 +506,12 @@ h3 {
 }
 .container .journals .journal-posts {
   width: 30%;
+}
+@media (max-width: 500px) {
+  .container .journals .journal-posts {
+    width: 90%;
+    margin-bottom: 3%;
+  }
 }
 .container .journals .journal-posts .journal-img img {
   width: 100%;

@@ -211,6 +211,11 @@ h3 {
     width: 50%;
   }
 }
+@media (max-width: 770px) {
+  .container header .cta {
+    width: 70%;
+  }
+}
 @media (max-width: 500px) {
   .container header .cta {
     width: 90%;

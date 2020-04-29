@@ -1,2 +1,28 @@
 //footer styles go here
 
+.container footer {
+    .flexin(row, wrap, space-around, stretch);
+    .gradientBg();
+    width: 100%;
+
+    ul {
+        .flexin(row, nowrap, space-around, center);
+        .ul-format();
+        width:100%;
+    }//end ul
+
+    li {
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        width: 90%;
+
+        .icon {
+          margin-right: 1%;
+
+        }
+
+        
+    }
+   
+}//end footer

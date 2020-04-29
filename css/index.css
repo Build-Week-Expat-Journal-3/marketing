@@ -233,6 +233,35 @@ h3 {
   text-transform: uppercase;
   color: #ffd5ab;
 }
+.container footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  background: linear-gradient(90deg, #eb9788 55%, #ffd5ab 91%);
+  width: 100%;
+}
+.container footer ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.container footer li {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  width: 90%;
+}
+.container footer li .icon {
+  margin-right: 1%;
+}
 .container .getStarted {
   height: 20vh;
 }
@@ -339,4 +368,17 @@ h3 {
 .container .journals .journal-posts .journals-info p {
   font-size: 1.5rem;
   text-align: left;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  max-width: 60%;
+  margin: 5% 20%;
+  background-color: #fff2e5;
+}
+.container .header {
+  border: 2px solid grey;
 }

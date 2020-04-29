@@ -149,12 +149,12 @@ h3 {
   margin: 5% 20%;
 }
 .container header {
+  border: 2px solid grey;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  background-color: green;
 }
 .container header .navigation {
   align-self: flex-end;
@@ -163,8 +163,7 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: space-around;
-  background-color: red;
+  align-items: center;
   margin-top: 2%;
   font-size: 1.6rem;
 }
@@ -201,18 +200,33 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: space-around;
+  align-items: center;
+  width: 100%;
   letter-spacing: 0.3rem;
+  background-color: whitesmoke;
 }
-.navigation nav a {
+.navigation nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation nav li a {
+  align-self: stretch;
   text-decoration: none;
   color: #b7472a;
+  padding: 0.6rem 2rem;
+  display: block;
 }
-.navigation nav a:hover {
+.navigation nav li a:hover {
   color: #eb9788;
 }
-.navigation nav a:active,
-.navigation nav a:hover {
+.navigation nav li a:active,
+.navigation nav li a:hover {
   text-transform: uppercase;
   color: #ffd5ab;
 }

@@ -16,17 +16,15 @@ h1, h2, h3 {
    margin: 5% 20%;
 
    header {
+       .remove();
        .flexin(column, nowrap, flex-start, center);
-       background-color: green;
 
     .navigation {
         align-self: flex-end;
         width: 100%;
-        .flexin(row, wrap, flex-end, space-around);
-        background-color: red;
+        .flexin(row, wrap, flex-end);
         margin-top: 2%;
         font-size: 1.6rem;
-
     }//end navigation
 
     .cta {
@@ -38,25 +36,26 @@ h1, h2, h3 {
         height: 30vh;
     }//end cta
    }//end header
+
    .getStarted {
        .remove();
        background-color: orange;
-   }
+   }//end getStarted
 
    .whoWhy {
        .remove();
        background-color: blue;
-   }
+   }//end whoWhy
 
    .journals {
        .remove();
        background-color: pink;
-   }
+   } //end journal
 
    .footerInfo {
        .remove();
        background-color: darkseagreen;
-   }
+   }//end footer
    
    
 }//end container

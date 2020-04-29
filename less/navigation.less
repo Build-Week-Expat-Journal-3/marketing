@@ -1,12 +1,24 @@
 //navigation styles go here
 
 .navigation nav {
-    .flexin(row, wrap, flex-end, space-around);
+    .flexin(row, wrap, flex-end);
+    width: 100%;
     letter-spacing: .3rem;
+    background-color: whitesmoke;
 
-    a {
+    ul {
+        .flexin(row, nowrap, flex-end, space-around);
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li a {
+        align-self: stretch;
         text-decoration: none;
         color: @darkclay;
+        padding: .6rem 2rem;
+        display:block;
 
         &:hover{
             color: @pinkclay;

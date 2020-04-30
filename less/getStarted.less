@@ -10,15 +10,6 @@
         color: @darkclay;
         font-size: 2.8rem;
         line-height: 2rem;
-
-        @media @ipad {
-            font-size: 2.8rem;
-        }
-
-        @media @phone {
-            font-size: 2.5rem;
-            line-height: 2.5rem;
-        }
     }//end h2
 
     ul {
@@ -27,21 +18,9 @@
         width: 100%;
         padding: 5% 0;
 
-        @media ipad {
-            .flexin(row, wrap, center, center);
-            flex-shrink: 1;
-        }//end ul ipad
-
         li {
             .flexin(row, wrap, space-evenly, stretch);
             width: 25%;
-            
-
-            @media ipad {
-                .flexin(column, wrap, space-evenly, center);
-                
-            
-            }// end li ipad
 
             .icon-box {
                 margin: 5% 0;
@@ -50,39 +29,19 @@
                     padding: 3% 0;
                     span {
                         font-size: 4rem;
-
-                        @media @phone {
-                            font-size: 3rem;
-                        }
-
-                        @media largeScreen {
-                            font-size: 4.3rem;
-                            //.flexin(row, wrap, space-evenly, center);
-                        }
-                    }//end span around icon
-
+                    }//end span
                 }//end icon
+
                 .getStarted-text {
                     margin-top: 3%;
                     align-items: flex-start;
                 
-
                     p{
                         font-size: 1.8rem;
                         flex-shrink: 1;
-                        @media @phone {
-                            font-size: 1.8rem;
-                        }
-
-                        @media largeScreen {
-                            font-size: 4rem;;
-                        }
-
                     }//end p
                 }//end getStarted text
             }//end icon-box
         }//end li
     }//end ul
-
-
 }//end getStarted

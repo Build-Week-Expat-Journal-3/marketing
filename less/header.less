@@ -3,14 +3,12 @@
     width: 100%;
 
     .cta {
-        .remove();
         width: 100%;
         background:url("../assets/destinationMap.jpeg");
         background-size: cover;
         opacity: .6;
 
         .box{
-            .remove();
             .flexin(row, wrap, center, center);
             padding: 5% 0%;
             width: 100%;
@@ -18,8 +16,9 @@
             .background-box { //will replace with logo possibly
                 .flexin(column, wrap, center, center);
                 background-color: @sand;
+                border-radius: 15px;
                 width: 60%;
-                padding: 10% 0;
+                padding: 2% 0;
                 opacity: .9;
 
                 @media @ipad {
@@ -29,33 +28,23 @@
                 @media @phone {
                     width: 60%;
                 }//end gradient box phone
-                
-                
 
-                h2 {
-                    font-size: 3.5rem;
-                    margin: 5% 0;
-                    text-align:center;
-
-                    @media @ipad {
-                        font-size: 3rem;
-                    }//end media h1 ipad
-
-                    @media @phone {
-                        font-size: 2.5rem;
-                        line-height: 2.3rem;
-                    }//end media h1 phone
-                }//end h2
-                
-
+                .logo {
+                    height: 250px;
+                    width: 250px;
+                    background:url("../assets/large_with_tagline.png");
+                    background-size: cover;
+                }
                 .button{
-                    color: @sand;
-                    border: 2px solid @sand;
+                    .remove();
+                    color: @darkclay;
+                    border: 2px solid @darkclay;
                     border-radius: 15px;
                     padding: 2%;
-                    font-size: 1.4rem;
+                    font-size: 1.7rem;
+                    font-weight: 700;
                     text-align: center;
-                    width: 40%;
+                    width: 30%;
 
                     @media @largeScreen {
                         width: 50%;
@@ -73,14 +62,14 @@
                     
                     a {
                         text-decoration: none;
-                        color: @sand;
+                        color: @darkclay;
                     }//end a link for button
 
                     &:hover{
-                        background-color: @darkclay;
+                        background-color: @darksand;
                     }//end button hover state
                 }//end button
-            }//end gradientBg box
+            }//end background box
         }//end box
     }//end cta  
 }//end header

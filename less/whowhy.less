@@ -6,22 +6,36 @@
             width: 100%;
             background-color: @darksand;
             padding-right: 2%;
+
+            @media @phone {
+                .flexin(column, wrap, center, center);
+            }
             
             .image{
                 background:url("../assets/drivingCars.jpg");
                 background-size: cover;
                 width: 40%;
+
+                @media @phone{
+                    display: hidden;
+                }
             }//end image
 
             .whoWhy-text {
                 width: 58%;
-                padding: 10% 0;
+                padding: 3% 0;
+
+                @media @phone {
+                    width: 90%;
+                    margin: 2% 0;
+                    padding: 3% 0;
+                }
                 
 
                 h2 {
                     color: @darkclay;
                     font-size: 2.5rem;
-                    margin-bottom: 2%;
+                    margin-bottom: 4%;
                     text-align: center;
                 }//end h2
 

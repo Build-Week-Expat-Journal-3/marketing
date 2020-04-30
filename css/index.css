@@ -522,19 +522,40 @@ h3 {
   background-color: #ffd5ab;
   padding-right: 2%;
 }
+@media (max-width: 500px) {
+  .container .whoWhy .whoWhy-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .container .whoWhy .whoWhy-box .image {
   background: url("../assets/drivingCars.jpg");
   background-size: cover;
   width: 40%;
 }
+@media (max-width: 500px) {
+  .container .whoWhy .whoWhy-box .image {
+    display: hidden;
+  }
+}
 .container .whoWhy .whoWhy-box .whoWhy-text {
   width: 58%;
-  padding: 10% 0;
+  padding: 3% 0;
+}
+@media (max-width: 500px) {
+  .container .whoWhy .whoWhy-box .whoWhy-text {
+    width: 90%;
+    margin: 2% 0;
+    padding: 3% 0;
+  }
 }
 .container .whoWhy .whoWhy-box .whoWhy-text h2 {
   color: #b7472a;
   font-size: 2.5rem;
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   text-align: center;
 }
 .container .whoWhy .whoWhy-box .whoWhy-text p {

@@ -3,8 +3,40 @@
 
 .container .journals {
     .remove();
-    .flexin(row, wrap, space-around, center);
+    .flexin(row, wrap, space-evenly, center);
     margin: 2% 0;
     background-color:@sand;
+    line-height: 2.2rem;
 
+    h2 {
+        color: @darkclay;
+        text-align: center;
+        width: 100%;
+        font-weight: 900;
+        font-size: 3rem;
+    }
+
+    h3{
+        color: @darkclay;
+        text-align:center;
+        width: 100%;
+        font-weight: 700;
+        margin: 2%;
+
+    }
+
+    .journal-posts {
+        .remove();
+        width: 30%;
+        margin: 5% 0;
+
+        .journal-img {
+            align-items: center;
+            .remove();
+    
+            a {
+                .remove();
+            }
+        }//end journal img
+    }//end journal posts
 } //end journal

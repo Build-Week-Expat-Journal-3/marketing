@@ -209,7 +209,7 @@ h3 {
     width: 50%;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 800px) {
   .container header .cta {
     width: 70%;
   }
@@ -279,7 +279,7 @@ h3 {
   margin: 0;
   text-align: center;
 }
-@media (max-width: 770px) {
+@media (max-width: 800px) {
   .navigation nav ul {
     justify-content: center;
   }
@@ -327,7 +327,7 @@ h3 {
   background: linear-gradient(90deg, #eb9788 55%, #ffd5ab 91%);
   width: 100%;
 }
-@media (max-width: 770px) {
+@media (max-width: 800px) {
   .container footer {
     flex-shrink: 1;
   }
@@ -363,7 +363,7 @@ h3 {
   font-size: 1.2rem;
   width: 90%;
 }
-@media (max-width: 770px) {
+@media (max-width: 800px) {
   .container footer ul li {
     flex-shrink: 1;
     justify-content: space-around;
@@ -383,69 +383,6 @@ h3 {
 }
 .container footer ul li .icon {
   letter-spacing: 0.5rem;
-}
-.container .getStarted {
-  height: 20vh;
-}
-@media (max-width: 500px) {
-  .container .getStarted {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-}
-.container .getStarted h2 {
-  color: #b7472a;
-  text-align: center;
-  font-weight: 700;
-  margin: 2% 0;
-}
-.container .getStarted ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-@media (max-width: 500px) {
-  .container .getStarted ul {
-    flex-direction: column;
-    margin-bottom: 2%;
-  }
-}
-@media (max-width: 500px) {
-  .container .getStarted ul li {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.container .getStarted ul li span {
-  font-size: 2rem;
-  padding: 0.6rem 2rem;
-  display: block;
-}
-.container .getStarted ul li .icon-box {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  color: #b7472a;
-  font-size: 2rem;
-  margin-top: 10%;
-}
-.container .getStarted ul li .icon-box .getStarted-text {
-  font-size: 1.6rem;
 }
 .container .whoWhy {
   display: flex;
@@ -489,7 +426,7 @@ h3 {
     margin: 2%;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 800px) {
   .container .whoWhy .whoWhy-text {
     width: 100%;
     margin: 2%;
@@ -501,7 +438,7 @@ h3 {
   object-fit: contain;
   background-repeat: no-repeat;
 }
-@media (max-width: 770px) {
+@media (max-width: 800px) {
   .container .whoWhy .image {
     width: 100%;
   }
@@ -570,6 +507,69 @@ h3 {
   font-size: 1.5rem;
   text-align: left;
 }
+.container .getStarted {
+  height: 20vh;
+}
+@media (max-width: 500px) {
+  .container .getStarted {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+.container .getStarted h2 {
+  color: #b7472a;
+  text-align: center;
+  font-weight: 700;
+  margin: 2% 0;
+}
+.container .getStarted ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .container .getStarted ul {
+    flex-direction: column;
+    margin-bottom: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .container .getStarted ul li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.container .getStarted ul li span {
+  font-size: 2rem;
+  padding: 0.6rem 2rem;
+  display: block;
+}
+.container .getStarted ul li .icon-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #b7472a;
+  font-size: 2rem;
+  margin-top: 10%;
+}
+.container .getStarted ul li .icon-box .getStarted-text {
+  font-size: 1.6rem;
+}
 .container .main-content-area {
   display: flex;
   flex-direction: row;
@@ -621,7 +621,7 @@ h3 {
     flex-shrink: 1;
   }
 }
-@media (max-width: 500px) and (max-width: 770px) {
+@media (max-width: 500px) and (max-width: 800px) {
   .container .main-content-area .box .profile {
     flex-shrink: 1;
     width: 50%;

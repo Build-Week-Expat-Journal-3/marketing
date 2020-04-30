@@ -484,7 +484,7 @@ h3 {
 }
 .container .whoWhy .whoWhy-box .whoWhy-text {
   width: 58%;
-  padding: 2% 0;
+  padding: 10% 0;
 }
 .container .whoWhy .whoWhy-box .whoWhy-text h2 {
   color: #b7472a;
@@ -498,6 +498,7 @@ h3 {
   text-align: left;
 }
 .container .journals {
+  border: 2px solid grey;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -505,56 +506,6 @@ h3 {
   align-items: center;
   margin: 2% 0;
   background-color: #fff2e5;
-}
-@media (max-width: 500px) {
-  .container .journals {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 3%;
-  }
-}
-.container .journals h2 {
-  text-align: center;
-  font-weight: 800;
-  margin: 2% 0;
-  color: #b7472a;
-  width: 100%;
-  font-size: 2.5rem;
-}
-.container .journals h3 {
-  color: #b7472a;
-  font-size: 1.7rem;
-  width: 100%;
-  text-align: center;
-  margin: 2% 0;
-}
-.container .journals .journal-posts {
-  width: 30%;
-}
-@media (max-width: 500px) {
-  .container .journals .journal-posts {
-    width: 90%;
-    margin-bottom: 3%;
-  }
-}
-.container .journals .journal-posts .journal-img img {
-  width: 100%;
-  object-fit: contain;
-}
-.container .journals .journal-posts .journals-info {
-  background-color: whitesmoke;
-  text-align: center;
-  line-height: 1.8rem;
-}
-.container .journals .journal-posts .journals-info h3 {
-  font-weight: 700;
-}
-.container .journals .journal-posts .journals-info p {
-  font-size: 1.5rem;
-  text-align: left;
 }
 .container footer {
   display: flex;

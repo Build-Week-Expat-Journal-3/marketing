@@ -557,25 +557,66 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.container .main-content-area .box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: stretch;
-  background: linear-gradient(90deg, #eb9788 55%, #ffd5ab 91%);
+  width: 100%;
+  border-bottom: 2px solid #ffd5ab;
+  flex-grow: 1;
 }
-.container .main-content-area h2 {
-  text-align: center;
-  margin: 2% 0;
+@media (max-width: 500px) {
+  .container .main-content-area .box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+  }
 }
-.container .main-content-area .image img {
-  width: 35%;
+.container .main-content-area .box .image-box {
+  width: 40%;
+  border-radius: 15px;
   object-fit: contain;
-  background-repeat: no-repeat;
-  border-radius: 25px;
 }
-.container .main-content-area .profile {
-  width: 62%;
-  color: white;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  border-bottom: 1px outset #b7472a;
-  text-shadow: 1px 1px 0 #b7472a;
+.container .main-content-area .box .image-box img {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+}
+.container .main-content-area .box .profile {
+  width: 60%;
+  text-align: center;
+  padding: 10%;
+  line-height: 2rem;
+}
+@media (max-width: 500px) {
+  .container .main-content-area .box .profile {
+    font-size: 1.6rem;
+    padding: 5%;
+    width: 100%;
+  }
+}
+.container .main-content-area .box .profile h2 {
+  color: #b7472a;
+  font-weight: 900;
+  text-align: center;
+}
+.container .main-content-area .box .profile p span {
+  font-weight: 800;
+}
+.container .main-content-area .box .profile a {
+  text-decoration: none;
+  color: #b7472a;
+}
+.container .main-content-area .box .profile a:hover {
+  color: #ffd5ab;
+  text-transform: uppercase;
 }

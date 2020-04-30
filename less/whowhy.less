@@ -1,29 +1,34 @@
 .container .whoWhy {
     .flexin(row, wrap, center, center);
-        .whoWhy-box{
+    
+    .whoWhy-box{
             .flexin(row, wrap, space-between, stretch);
             width: 100%;
             background-color: @darksand;
+            padding-right: 2%;
             
             .image{
                 background:url("../assets/drivingCars.jpg");
                 background-size: cover;
                 width: 40%;
             }//end image
+
             .whoWhy-text {
-                width: 55%;
+                width: 58%;
                 padding: 2% 0;
+                
 
                 h2 {
-                    .h2-format();
                     color: @darkclay;
                     font-size: 2.5rem;
+                    margin-bottom: 2%;
                 }//end h2
 
                 p{
                     font-size: 1.8rem;
                     line-height: 1.8rem;
+                    text-align: left;
                 }//end p
             }//end whoWhy text
         }//end box
-}//end whoWHy
+}//end whoWhy

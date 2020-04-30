@@ -185,12 +185,14 @@ h3 {
   width: 100%;
 }
 .container header .cta {
+  border: 2px solid grey;
   width: 100%;
   background: url("../assets/destinationMap.jpeg");
   background-size: cover;
   opacity: 0.6;
 }
 .container header .cta .box {
+  border: 2px solid grey;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -199,44 +201,44 @@ h3 {
   padding: 5% 0%;
   width: 100%;
 }
-.container header .cta .box .gradientBg-box {
+.container header .cta .box .background-box {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #eb9788 55%, #ffd5ab 91%);
+  background-color: #fff2e5;
   width: 60%;
   padding: 10% 0;
   opacity: 0.9;
 }
 @media (max-width: 800px) {
-  .container header .cta .box .gradientBg-box {
+  .container header .cta .box .background-box {
     width: 70%;
   }
 }
 @media (max-width: 500px) {
-  .container header .cta .box .gradientBg-box {
+  .container header .cta .box .background-box {
     width: 60%;
   }
 }
-.container header .cta .box .gradientBg-box h1 {
+.container header .cta .box .background-box h2 {
   font-size: 3.5rem;
   margin: 5% 0;
   text-align: center;
 }
 @media (max-width: 800px) {
-  .container header .cta .box .gradientBg-box h1 {
+  .container header .cta .box .background-box h2 {
     font-size: 3rem;
   }
 }
 @media (max-width: 500px) {
-  .container header .cta .box .gradientBg-box h1 {
+  .container header .cta .box .background-box h2 {
     font-size: 2.5rem;
     line-height: 2.3rem;
   }
 }
-.container header .cta .box .gradientBg-box .button {
+.container header .cta .box .background-box .button {
   color: #fff2e5;
   border: 2px solid #fff2e5;
   border-radius: 15px;
@@ -246,27 +248,27 @@ h3 {
   width: 40%;
 }
 @media (min-width: 1000px) {
-  .container header .cta .box .gradientBg-box .button {
+  .container header .cta .box .background-box .button {
     width: 50%;
   }
 }
 @media (max-width: 800px) {
-  .container header .cta .box .gradientBg-box .button {
+  .container header .cta .box .background-box .button {
     width: 60%;
     flex: 1 1 60%;
   }
 }
 @media (max-width: 500px) {
-  .container header .cta .box .gradientBg-box .button {
+  .container header .cta .box .background-box .button {
     width: 70%;
     flex: 1 1 50%;
   }
 }
-.container header .cta .box .gradientBg-box .button a {
+.container header .cta .box .background-box .button a {
   text-decoration: none;
   color: #fff2e5;
 }
-.container header .cta .box .gradientBg-box .button:hover {
+.container header .cta .box .background-box .button:hover {
   background-color: #b7472a;
 }
 .navigation nav {
@@ -518,27 +520,40 @@ h3 {
   }
 }
 .container .whoWhy {
-  border: 2px solid grey;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.container .whoWhy .box {
-  border: 2px solid grey;
+.container .whoWhy .whoWhy-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  background-color: #ffd5ab;
+  padding-right: 2%;
 }
-.container .whoWhy .box .image {
-  border: 2px solid grey;
+.container .whoWhy .whoWhy-box .image {
+  background: url("../assets/drivingCars.jpg");
+  background-size: cover;
+  width: 40%;
 }
-.container .whoWhy .box .whoWhy-text {
-  border: 2px solid grey;
+.container .whoWhy .whoWhy-box .whoWhy-text {
+  width: 58%;
+  padding: 2% 0;
 }
-.container .whoWhy .box .whoWhy-text h2 {
-  border: 2px solid grey;
+.container .whoWhy .whoWhy-box .whoWhy-text h2 {
+  color: #b7472a;
+  font-size: 2.5rem;
+  margin-bottom: 2%;
 }
-.container .whoWhy .box .whoWhy-text p {
-  border: 2px solid grey;
+.container .whoWhy .whoWhy-box .whoWhy-text p {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-align: left;
 }
 .container .journals {
   display: flex;

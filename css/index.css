@@ -518,6 +518,7 @@ h3 {
   }
 }
 .container .whoWhy {
+  border: 2px solid grey;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -525,35 +526,19 @@ h3 {
   align-items: center;
 }
 .container .whoWhy .box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 100%;
-  background-color: #ffd5ab;
+  border: 2px solid grey;
 }
 .container .whoWhy .box .image {
-  background: url("../assets/drivingCars.jpg");
-  background-size: cover;
-  width: 40%;
-  justify-self: flex-start;
+  border: 2px solid grey;
 }
 .container .whoWhy .box .whoWhy-text {
-  width: 55%;
-  padding: 2% 0;
+  border: 2px solid grey;
 }
 .container .whoWhy .box .whoWhy-text h2 {
-  text-align: center;
-  font-weight: 800;
-  margin: 2% 0;
-  color: #b7472a;
-  font-size: 2.5rem;
-  margin: 3% 0;
+  border: 2px solid grey;
 }
 .container .whoWhy .box .whoWhy-text p {
-  font-size: 1.8rem;
-  line-height: 1.8rem;
+  border: 2px solid grey;
 }
 .container .journals {
   display: flex;

@@ -1,5 +1,5 @@
 .container .whoWhy {
-    
+    .remove();
     .flexin(row, wrap, center, center);
         .box{
             .flexin(row, wrap, space-between, stretch);
@@ -10,7 +10,6 @@
                 background:url("../assets/drivingCars.jpg");
                 background-size: cover;
                 width: 40%;
-                justify-self: flex-start;
             }//end image
             .whoWhy-text {
                 width: 55%;
@@ -20,15 +19,12 @@
                     .h2-format();
                     color: @darkclay;
                     font-size: 2.5rem;
-                    margin: 3% 0;
-
                 }//end h2
 
                 p{
                     font-size: 1.8rem;
                     line-height: 1.8rem;
                 }//end p
-
             }//end whoWhy text
         }//end box
 }//end whoWHy

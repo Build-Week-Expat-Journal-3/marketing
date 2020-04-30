@@ -1,8 +1,12 @@
 .container .getStarted {
-  .flexin(column, nowrap, center, center);
+  .flexin(column, wrap, center, center);
   padding: 2% 0;
   width: 100%;
   color: @darkclay;
+
+  @media @phone {
+      line-height: 2rem;
+  }
   
 
     h2 {
@@ -10,6 +14,10 @@
         color: @darkclay;
         font-size: 2.8rem;
         line-height: 2rem;
+
+        @media @phone {
+            font-size: 2.4rem;
+        }
     }//end h2
 
     ul {
@@ -18,9 +26,19 @@
         width: 100%;
         padding: 5% 0;
 
+        @media @phone {
+            flex-direction: column;
+            align-content: center;
+            padding: 0;
+        }
+
         li {
             .flexin(row, wrap, space-evenly, stretch);
             width: 25%;
+
+            @media @phone {
+                width: 100%;
+            }
 
             .icon-box {
                 margin: 5% 0;

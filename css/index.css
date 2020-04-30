@@ -430,12 +430,17 @@ h3 {
 .container .getStarted {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 2% 0;
   width: 100%;
   color: #b7472a;
+}
+@media (max-width: 500px) {
+  .container .getStarted {
+    line-height: 2rem;
+  }
 }
 .container .getStarted h2 {
   text-align: center;
@@ -444,6 +449,11 @@ h3 {
   color: #b7472a;
   font-size: 2.8rem;
   line-height: 2rem;
+}
+@media (max-width: 500px) {
+  .container .getStarted h2 {
+    font-size: 2.4rem;
+  }
 }
 .container .getStarted ul {
   list-style-type: none;
@@ -458,6 +468,13 @@ h3 {
   width: 100%;
   padding: 5% 0;
 }
+@media (max-width: 500px) {
+  .container .getStarted ul {
+    flex-direction: column;
+    align-content: center;
+    padding: 0;
+  }
+}
 .container .getStarted ul li {
   display: flex;
   flex-direction: row;
@@ -465,6 +482,11 @@ h3 {
   justify-content: space-evenly;
   align-items: stretch;
   width: 25%;
+}
+@media (max-width: 500px) {
+  .container .getStarted ul li {
+    width: 100%;
+  }
 }
 .container .getStarted ul li .icon-box {
   margin: 5% 0;

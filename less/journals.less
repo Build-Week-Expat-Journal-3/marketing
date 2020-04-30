@@ -2,7 +2,6 @@
 
 
 .container .journals {
-    .remove();
     .flexin(row, wrap, space-evenly, center);
     margin: 2% 0;
     background-color:@sand;
@@ -26,17 +25,46 @@
     }
 
     .journal-posts {
-        .remove();
-        width: 30%;
-        margin: 5% 0;
+        border: 2px solid @pinkclay;
+        width: 31%;
+        margin: 3% 0;
+
+        #img1 {
+            background:url("../assets/hotairballoon.jpg");
+            background-size: cover;
+            opacity: 0.8;
+        }//end img1 of journals
+
+
+        #img2 {
+            background:url("../assets/imhere.jpg");
+            background-size: cover;
+            opacity: 0.8;
+        }//end img1 of journals
+
+
+        #img3 {
+            background:url("../assets/ioinbior.jpg");
+            background-size: cover;
+            opacity: 0.8;
+        }//end img1 of journals
 
         .journal-img {
-            align-items: center;
-            .remove();
-    
-            a {
-                .remove();
-            }
+            height: 200px;
         }//end journal img
+
+        .journals-info{
+            width: 100%;
+            padding: 2% 0;
+            h3 {
+                font-size: 1.6rem;
+                width: 95%;  
+            }//end h3
+            p {
+                text-align: center;
+                width: 95%;
+                font-size: 1.6rem;
+            }
+        }
     }//end journal posts
 } //end journal

@@ -498,7 +498,6 @@ h3 {
   text-align: left;
 }
 .container .journals {
-  border: 2px solid grey;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -523,16 +522,40 @@ h3 {
   margin: 2%;
 }
 .container .journals .journal-posts {
-  border: 2px solid grey;
-  width: 30%;
-  margin: 5% 0;
+  border: 2px solid #eb9788;
+  width: 31%;
+  margin: 3% 0;
+}
+.container .journals .journal-posts #img1 {
+  background: url("../assets/hotairballoon.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+.container .journals .journal-posts #img2 {
+  background: url("../assets/imhere.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+.container .journals .journal-posts #img3 {
+  background: url("../assets/ioinbior.jpg");
+  background-size: cover;
+  opacity: 0.8;
 }
 .container .journals .journal-posts .journal-img {
-  align-items: center;
-  border: 2px solid grey;
+  height: 200px;
 }
-.container .journals .journal-posts .journal-img a {
-  border: 2px solid grey;
+.container .journals .journal-posts .journals-info {
+  width: 100%;
+  padding: 2% 0;
+}
+.container .journals .journal-posts .journals-info h3 {
+  font-size: 1.6rem;
+  width: 95%;
+}
+.container .journals .journal-posts .journals-info p {
+  text-align: center;
+  width: 95%;
+  font-size: 1.6rem;
 }
 .container footer {
   display: flex;

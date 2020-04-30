@@ -12,7 +12,7 @@ h1, h2, h3 {
 }
 
 .container {
-   .flexin(column, wrap, flex-start, stretch);
+   .flexin(column, wrap, flex-start, center);
    max-width: 60%;
    margin: 5% 20%;
    background-color: @sand;
@@ -24,24 +24,10 @@ h1, h2, h3 {
        margin: 5% 10%;
        
 
-   }
+   }//end media phone
  
 
-   header {
-       .flexin(column, wrap, flex-start, center);
-       background-image: url(https://images.pexels.com/photos/2007401/pexels-photo-2007401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-       object-fit: cover;
-       background-repeat: no-repeat;
-       
-       
-       @media @phone {
-        //header image background needs to shrink accordingly
-        
-        justify-content: center;
- 
-    }//end phone breakpoint
-
-    .navigation {
+    header .navigation {
         align-self: flex-end;
         width: 100%;
         .flexin(row, wrap, flex-end);
@@ -50,61 +36,7 @@ h1, h2, h3 {
         @media @phone {
             .flexin (column, wrap, center, center);
      
-        }
+        }//end media navigation 
     }//end navigation
-
-    .cta {
-        .flexin(column, wrap, center, center);
-        .gradientBg();
-        color: white;
-        text-shadow: 1px 1px 0 @darkclay;
-        opacity: 0.8;
-        width: 40%;
-        height: 30vh;
-
-        @media @largeScreen {
-            width: 50%;
-        }
-
-        @media @ipad {
-            width: 70%;
-        }
-
-        @media @phone{
-            width: 90%;
-        }
-
-        h1 {
-            font-size: 4rem;
-            font-weight: 800;
-            align-self: center;
-            margin: 15% 0;
-
-            @media @phone {
-                //.flexin (column, wrap, center, center);
-                text-align:center;
-                line-height: 3rem;
-                font-size: 3rem;
-                margin: 5% 0;
-            
-            }
-        }
-
-        .button {
-            padding: 5%;
-            font-size: 1.8rem;
-            font-weight: 500;
-            text-shadow: 1px 1px 0 @darkclay;
-            border: 2px solid white;
-            border-radius: 1rem;
-
-            @media @phone {
-                font-size: 1.2rem;
-                padding: 3%;
-                border: 1px solid white;
-                text-align:center;
-            }
-        }
-    }//end cta
-   }//end header
+  
 }//end container

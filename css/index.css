@@ -213,7 +213,7 @@ h3 {
 }
 @media (max-width: 800px) {
   .container header .cta .box .background-box {
-    width: 70%;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
@@ -226,6 +226,14 @@ h3 {
   width: 250px;
   background: url("../assets/large_with_tagline.png");
   background-size: cover;
+}
+@media (max-width: 500px) {
+  .container header .cta .box .background-box .logo {
+    height: 180px;
+    width: 180px;
+    background: url("../assets/small_no_tagline.png");
+    background-size: cover;
+  }
 }
 .container header .cta .box .background-box .button {
   border: 2px solid grey;

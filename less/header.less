@@ -20,7 +20,7 @@
            
             .gradientBg-box { //will replace with logo possibly
                 .flexin(column, wrap, center, center);
-                .gradientBg();
+                background-color: @sand;
                 width: 60%;
                 padding: 10% 0;
                 opacity: .9;
@@ -33,21 +33,27 @@
                     width: 60%;
                 }//end gradient box phone
                 
+                .logo {
+                    .remove();
+                    width: 80%;
+                    background: url("../assets/large_with_tagline.png");
+                    background-size: contain;
+                }
 
-                h1 {
-                    font-size: 3.5rem;
-                    margin: 5% 0;
-                    text-align:center;
+                // h2 {
+                //     font-size: 3.5rem;
+                //     margin: 5% 0;
+                //     text-align:center;
 
-                    @media @ipad {
-                        font-size: 3rem;
-                    }//end media h1 ipad
+                //     @media @ipad {
+                //         font-size: 3rem;
+                //     }//end media h1 ipad
 
-                    @media @phone {
-                        font-size: 2.5rem;
-                        line-height: 2.3rem;
-                    }//end media h1 phone
-                }//end h1 title
+                //     @media @phone {
+                //         font-size: 2.5rem;
+                //         line-height: 2.3rem;
+                //     }//end media h1 phone
+                // }//end h1 title
 
                 .button{
                     color: @sand;

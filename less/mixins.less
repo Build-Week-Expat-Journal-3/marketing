@@ -13,25 +13,36 @@
     align-items:@align;
 }
 
-//for the background
+//for the gradient background
 .gradientBg() {
     background: linear-gradient(90deg, rgba(235,151,136,1) 55%, rgba(255,213,171,1) 91%);
 }
 
-//for h2
+//for h2 headers
 
 .h2-format() {
     text-align: center;
-        font-weight: 700;
+        font-weight: 800;
         margin: 2% 0;
 }
 
-//for ul
+//for ul to adjust nav
 .ul-format() {
     list-style-type: none;
         padding: 0;
         margin: 0;
         text-align:center;
+}
+
+//to make the images fit porperly
+.img(@height, @width) {
+    width: @width;
+    height: @height;
+}
+
+//flex grow shrink basis
+.flex(@basis) {
+    flex: 1 1 @basis;
 }
 
 //media query
@@ -41,4 +52,7 @@
 //because it wants to be SPECIAL when all teh others work...tsk 
 @ipad: ~'(max-width: 800px)';   //before 770
 
-@largeScreen: ~'(max-width: 1220px)';
+
+//if needed - just in case
+
+@largeScreen: ~'(min-width: 1000px)';

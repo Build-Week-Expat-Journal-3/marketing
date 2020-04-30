@@ -1,0 +1,87 @@
+.container header {
+    .flexin(column, wrap, center, center);
+    width: 100%;
+
+    .cta {
+        width: 100%;
+        background:url("../assets/destinationMap.jpeg");
+        background-size: cover;
+        opacity: .6;
+
+        // img {
+        //     .img(100%,100%);
+        // }//end image
+
+
+        .box{
+            .flexin(row, wrap, center, center);
+            padding: 5% 0%;
+            width: 100%;
+           
+            .gradientBg-box {
+                .flexin(column, wrap, center, center);
+                .gradientBg();
+                width: 60%;
+                padding: 10% 0;
+                opacity: .9;
+
+                @media @ipad {
+                  width: 70%;
+                }//end gradient box ipad
+
+                @media @phone {
+                    width: 60%;
+                }//end gradient box phone
+                
+
+                h1 {
+                    font-size: 3.5rem;
+                    margin: 5% 0;
+                    text-align:center;
+
+                    @media @ipad {
+                        font-size: 3rem;
+                    }//end media h1 ipad
+
+                    @media @phone {
+                        font-size: 2.5rem;
+                        line-height: 2.3rem;
+                    }//end media h1 phone
+                }//end h1 title
+
+                .button{
+                    color: @sand;
+                    border: 2px solid @sand;
+                    border-radius: 15px;
+                    padding: 2%;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    width: 40%;
+
+                    @media @largeScreen {
+                        width: 50%;
+                    }//end meda large screen 1000
+
+                    @media @ipad {
+                        width: 60%;
+                        .flex(60%);
+                    }// end ipad 800 media
+
+                    @media @phone {
+                        width: 70%;
+                        .flex(50%);
+                    }//end phone media
+                    
+                    a {
+                        text-decoration: none;
+                        color: @sand;
+                    }//end a link for button
+
+                    &:hover{
+                        background-color: @darkclay;
+                    }//end button hover state
+                }//end button
+            }//end gradientBg box
+        }//end box
+    }//end cta  
+}//end header

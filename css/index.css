@@ -395,20 +395,18 @@ h3 {
 .container .main-content-area .box .profile {
   width: 60%;
   text-align: center;
-  padding: 10%;
+  padding: 5%;
   line-height: 2.5rem;
 }
 @media (max-width: 800px) {
   .container .main-content-area .box .profile {
-    flex: 0 1 60%;
+    width: 70%;
   }
 }
 @media (max-width: 500px) {
   .container .main-content-area .box .profile {
     font-size: 1.5rem;
-    padding: 5%;
-    width: 100%;
-    flex: 1 1 60%;
+    width: 80%;
   }
 }
 .container .main-content-area .box .profile h2 {

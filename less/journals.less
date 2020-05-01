@@ -2,7 +2,7 @@
 
 
 .container .journals {
-    .flexin(row, wrap, center, center);
+    .flexin(row, wrap, space-evenly, flex-start);
     margin: 2% 0;
     background-color:@sand;
     line-height: 2.2rem;
@@ -33,16 +33,16 @@
     }//end h3
 
     .journal-posts {
-        
         border: 2px solid @pinkclay;
         width: 31%;
         margin: 3% 0;
         
         @media @phone {
-            
             .flexin(column, wrap, center, stretch);
-            width: 90%;
+            border: 1px solid @pinkclay;
+            width: 60%;
         }
+        
         
         #img1 {
             background:url("../assets/hotairballoon.jpg");

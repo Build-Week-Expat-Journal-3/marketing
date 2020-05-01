@@ -2,10 +2,14 @@
 
 
 .container .journals {
-    .flexin(row, wrap, space-evenly, center);
+    .flexin(row, wrap, center, center);
     margin: 2% 0;
     background-color:@sand;
     line-height: 2.2rem;
+
+    @media @phone {
+        .flexin(column, wrap, center, center);
+    }
 
     h2 {
         color: @darkclay;
@@ -13,7 +17,7 @@
         width: 100%;
         font-weight: 900;
         font-size: 3rem;
-    }
+    }//end h2
 
     h3{
         color: @darkclay;
@@ -22,15 +26,23 @@
         font-weight: 700;
         margin: 2%;
 
-    }
+        @media @phone{
+            line-height: 2rem;
+            font-size: 1.8rem;
+        }
+    }//end h3
 
     .journal-posts {
+        
         border: 2px solid @pinkclay;
         width: 31%;
         margin: 3% 0;
-
-
-
+        
+        @media @phone {
+            
+            .flexin(column, wrap, center, stretch);
+            width: 90%;
+        }
         
         #img1 {
             background:url("../assets/hotairballoon.jpg");
@@ -43,31 +55,38 @@
             background:url("../assets/imhere.jpg");
             background-size: cover;
             opacity: 0.8;
-        }//end img1 of journals
+        }//end img2 of journals
 
 
         #img3 {
             background:url("../assets/ioinbior.jpg");
             background-size: cover;
             opacity: 0.8;
-        }//end img1 of journals
+        }//end img3 of journals
 
         .journal-img {
             height: 200px;
+
+            @media @phone {
+                height: 100px;
+            }
         }//end journal img
 
         .journals-info{
             width: 100%;
-            padding: 2% 0;
+            padding: 1% 0;
+
+
             h3 {
                 font-size: 1.6rem;
                 width: 95%;  
             }//end h3
+
             p {
                 text-align: center;
                 width: 95%;
                 font-size: 1.6rem;
-            }
-        }
+            }//end p
+        }//end journal-info
     }//end journal posts
 } //end journal

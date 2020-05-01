@@ -567,11 +567,20 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 2% 0;
   background-color: #fff2e5;
   line-height: 2.2rem;
+}
+@media (max-width: 500px) {
+  .container .journals {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .container .journals h2 {
   color: #b7472a;
@@ -587,10 +596,26 @@ h3 {
   font-weight: 700;
   margin: 2%;
 }
+@media (max-width: 500px) {
+  .container .journals h3 {
+    line-height: 2rem;
+    font-size: 1.8rem;
+  }
+}
 .container .journals .journal-posts {
   border: 2px solid #eb9788;
   width: 31%;
   margin: 3% 0;
+}
+@media (max-width: 500px) {
+  .container .journals .journal-posts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 90%;
+  }
 }
 .container .journals .journal-posts #img1 {
   background: url("../assets/hotairballoon.jpg");
@@ -610,9 +635,14 @@ h3 {
 .container .journals .journal-posts .journal-img {
   height: 200px;
 }
+@media (max-width: 500px) {
+  .container .journals .journal-posts .journal-img {
+    height: 100px;
+  }
+}
 .container .journals .journal-posts .journals-info {
   width: 100%;
-  padding: 2% 0;
+  padding: 1% 0;
 }
 .container .journals .journal-posts .journals-info h3 {
   font-size: 1.6rem;

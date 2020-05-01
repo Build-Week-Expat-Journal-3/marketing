@@ -558,8 +558,12 @@ h3 {
 }
 .container .whoWhy .whoWhy-box .whoWhy-text p {
   font-size: 1.8rem;
-  line-height: 1.8rem;
+  line-height: 2rem;
   text-align: left;
+}
+.container .whoWhy .whoWhy-box .whoWhy-text p span {
+  font-weight: 900;
+  color: #b7472a;
 }
 .container .journals {
   display: flex;
